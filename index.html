@@ -94,6 +94,8 @@
                 let number = data['temp']
                 $('#temp').text(number)
             })
+            
+            
             fetch("http://spartacodingclub.shop/web/api/movie").then(res => res.json()).then(data => {
                 let rows = data['movies']
                 $('#cards').empty()
